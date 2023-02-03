@@ -17,30 +17,30 @@ def draw():
 
 root = tk.Tk()
 root.geometry("300x300")
-root.configure(bg="yellow")
+root.configure(bg="grey")
 root.title("Movie Drawer")
 
-frame = tk.Frame(root, bg="yellow")
+frame = tk.Frame(root, bg="grey")
 frame.pack(padx=10, pady=10)
 
 movies = []
 
-entry = tk.Entry(frame, bg="yellow", fg="red")
+entry = tk.Entry(frame, bg="grey", fg="white")
 entry.grid(row=0, column=0)
 
-add_button = tk.Button(frame, text="Add", command=add_movie, bg="yellow", fg="red")
+add_button = tk.Button(frame, text="Add", command=add_movie, bg="grey", fg="white")
 add_button.grid(row=0, column=1)
 
-listbox = tk.Listbox(frame, bg="yellow", fg="red")
+listbox = tk.Listbox(frame, bg="grey", fg="white")
 listbox.grid(row=1, column=0, columnspan=2)
 
-spin = tk.Spinbox(frame, from_=1, to=100, bg="yellow", fg="red")
+spin = tk.Spinbox(frame, from_=1, to=100, bg="grey", fg="white")
 spin.grid(row=2, column=0)
 
-draw_button = tk.Button(frame, text="Draw", command=draw, bg="yellow", fg="red")
+draw_button = tk.Button(frame, text="Draw", command=draw, bg="grey", fg="white")
 draw_button.grid(row=2, column=1)
 
-results_label = tk.Label(frame, text="", bg="yellow", fg="red")
+results_label = tk.Label(frame, text="", bg="grey", fg="white")
 results_label.grid(row=3, column=0, columnspan=2)
 
 root.mainloop()
